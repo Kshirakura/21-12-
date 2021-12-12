@@ -19,27 +19,27 @@
           <li><a href="#column">COLUMN</a></li>
           <li><a href="#series">SERIES</a></li>
           <li><a href="#qanda">Q&A</a></li>
-          <li class="pc-visible"><a href="contact">CONTACT</a></li>
+          <li><a href="contact">CONTACT</a></li>
         </ul>
       </nav>
       </div>
     </header>
     <div class="pickup">
-      <div class="pickup-container pc-flex">
+      <div class="pickup-container container pc-flex">
         <div class="pickup-card">
           <img src="img/pickup1.jpg" alt="pickup-image">
-          <h2 pickup-title>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-          <span class="read-more">READ MORE</span>
+          <h2 class="pickup-title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+          <div class="read-more"><a href="">READ MORE</a></div>
         </div>
         <div class="pickup-card">
           <img src="img/pickup2.jpg" alt="pickup-image">
-          <h2 pickup-title>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-          <span class="read-more">READ MORE</span>
+          <h2 class="pickup-title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+          <div class="read-more"><a href="">READ MORE</a></div>
         </div>
         <div class="pickup-card">
           <img src="img/pickup3.jpg" alt="pickup-image">
-          <h2 pickup-title>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-          <span class="read-more">READ MORE</span>
+          <h2 class="pickup-title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+          <div class="read-more"><a href="">READ MORE</a></div>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@
       <div class="columns-container container pc-flex">
         <div class="column articles">
           <div class="article">
-            <h2 class="article-title">タイトルテキストテキストテキストテキストテキスト</h2>
+            <h2 class="article-title">タイトルテキストテキストテキストテキスト</h2>
             <time><span class="date">2020/01/01</span></time><span class="category">カテゴリ1</span>
             <div class="article-image">
               <img src="img/main1.jpg" alt="main-image">
@@ -55,9 +55,9 @@
             <div class="article-text">
               <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
-            <span class="read-more">READ MORE</span>
+            <div class="read-more"><a href="">READ MORE</a></div>
           </div>
           <div class="article">
             <h2 class="article-title">タイトルテキストテキストテキストテキストテキスト</h2>
@@ -68,9 +68,9 @@
             <div class="article-text">
               <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
-            <span class="read-more">READ MORE</span>
+            <div class="read-more"><a href="">READ MORE</a></div>
           </div>
           <div class="article">
             <h2 class="article-title">タイトルテキストテキストテキストテキストテキスト</h2>
@@ -81,32 +81,104 @@
             <div class="article-text">
               <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
-            <span class="read-more">READ MORE</span>
+            <div class="read-more"><a href="">READ MORE</a></div>
           </div>
-          <div class="article">
-            <h2 class="article-title">タイトルテキストテキストテキストテキストテキスト</h2>
-            <time><span class="date">2020/01/01</span></time><span class="category">カテゴリ1</span>
-            <div class="article-image">
-              <img src="img/main1.jpg" alt="main-image">
+          
+        </div>
+        <div class="column aside">
+          <div class="author">
+            <div class="author-image">
+              <img src="img/author.jpg" alt="author">
             </div>
-            <div class="article-text">
-              <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <h3 class="author-name">Name Name</h3>
+            <p class="author-description">プロフィールテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="ranking">
+            <h3 class="ranking-title">Ranking</h3>
+            <div class="ranking-cards">
+              <a href="">
+                <div class="ranking-card">
+                  <div class="ranking-card-image">
+                    <img src="img/ranking1.jpg" alt="ranking">
+                  </div>
+                  <p class="ranking-text">タイトルテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="ranking-card">
+                  <div class="ranking-card-image">
+                    <img src="img/ranking2.jpg" alt="ranking">
+                  </div>
+                  <p class="ranking-text">タイトルテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="ranking-card">
+                  <div class="ranking-card-image">
+                    <img src="img/ranking3.jpg" alt="ranking">
+                  </div>
+                  <p class="ranking-text">タイトルテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+              </a>
             </div>
-            <span class="read-more">READ MORE</span>
+          </div>
+          <div class="archives">
+            <h3 class="archive-title">Archive</h3>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
+            <div class="archive"><a href=""></a><span>XXXX年XX月(XX)</span></a></div>
           </div>
         </div>
-        <div class="column aside"></div>
       </div>
     </div>
     <footer id="footer">
-      <div class="footer-container pc-flex">
-        <div class="footer-about"></div>
-        <div class="footer-menu"></div>
-        <div class="footer-twitter"></div>
+      <div class="footer-container container pc-flex">
+        <div class="footer-about">
+          <h3 class="footer-about-title">About</h3>
+          <div class="footer-about-text">
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <nav>
+            <ul class="footer-about-list">
+              <li><a href="">プロフィール詳細</a></li>
+              <li><a href="">お仕事の依頼</a></li>
+              <li><a href="">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-menu">
+          <h3 class="footer-menu-title">Menu</h3>
+          <nav>
+            <ul class="footer-menu-list">
+              <li><a href="">NEW</a></li>
+              <li><a href="">CATEGORY</a></li>
+              <li><a href="">COLUMN</a></li>
+              <li><a href="">SERIES</a></li>
+              <li><a href="">Q&A</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-twitter">
+          <h3 class="footer-twitter-title">Twitter</h3>
+          <a class="twitter-timeline" data-height="300" href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">Tweets by TwitterJP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>&copy;Travel & Blog</span>
       </div>
     </footer>
   </body>

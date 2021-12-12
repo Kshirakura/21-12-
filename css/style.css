@@ -1,1 +1,344 @@
-a
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap');
+
+:root {
+  --f1: 39.06px;
+  --f2: 31.25px;
+  --f3: 25px;
+  --f4: 20px;
+  --f5: 16px;
+  --f6: 12.8px;
+  --basecolor: #eee;
+  --textcolor: #333;
+}
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textcolor);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.read-more {
+  text-align: center;
+  width: auto;
+  position: relative;
+  font-size: var(--f6)
+}
+
+.read-more::after {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 1px;
+  background: var(--textcolor);
+  bottom: -2px;
+  left:50%;
+  transform: translateX(-50%)
+}
+
+/*-----------
+ヘッダー
+-----------*/
+
+.header-container {
+  padding: 20px 0;
+}
+
+.site-title {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.header-list {
+  background: var(--textcolor);
+  padding: 20px 4%;
+  overflow: scroll;
+  margin: 0 calc(50% - 50vw);
+  font-size: var(--f6);
+}
+
+.header-list li:not(last-child) {
+  margin-right: 50px;
+}
+
+.header-list a {
+  color: #fff;
+}
+
+
+/*-----------
+pickup
+-----------*/
+.pickup-card {
+  margin-bottom: 40px;
+}
+
+.pickup-title {
+  font-size: var(--f5);
+  margin-bottom: 20px;
+}
+
+
+/*-----------
+article
+-----------*/
+.article {
+  margin-bottom: 60px;
+}
+
+.article-text {
+  margin-bottom:30px 
+}
+
+.date, .category {
+  font-size: var(--f6);
+}
+
+.date {
+  margin-right: 20px;
+}
+
+
+/*-----------
+author
+-----------*/
+.author {
+  margin-bottom: 60px;
+}
+
+.author-image {
+  width: 30%;
+  margin: 20px auto;
+}
+.author-image img{
+  border-radius: 50%;
+} 
+
+.author-name {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.author-description {
+  font-size: var(--f6);
+}
+
+/*-----------
+ranking
+-----------*/
+.ranking {
+  margin-bottom: 60px;
+}
+
+.ranking-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ranking-card:not(last-child){
+  margin-bottom: 30px
+}
+
+.ranking-text {
+  font-size: var(--f6);
+}
+
+/*-----------
+archive
+-----------*/
+.archives {
+  margin-bottom: 60px;
+}
+
+.archive-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.archive {
+  padding: 20px;
+  border-top: solid 1px var(--textcolor);
+  font-size: var(--f6);
+}
+
+.archive:last-child {
+  border-bottom: solid 1px var(--textcolor);
+}
+
+
+/*-----------
+footer
+-----------*/
+#footer {
+  background: #f9f9f9;
+  padding: 90px 0 0 0;
+}
+
+.footer-about {
+  margin-bottom: 45px;
+}
+
+.footer-about-text,
+.footer-about-list,
+.footer-menu-list {
+  font-size: var(--f6);
+}
+
+.footer-about-title {
+  margin-bottom: 30px;
+}
+
+.footer-about-text {
+  margin-bottom: 30px;
+}
+
+.footer-about-list li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.footer-about-list li::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 30%;
+  left: -15px;
+}
+
+.footer-menu {
+  margin-bottom: 45px;
+}
+
+.footer-menu-title {
+  margin-bottom: 30px;
+}
+
+.footer-menu-list li {
+  padding: 20px;
+  border-top: solid 1px var(--textcolor);
+}
+
+.footer-menu-list li:last-child {
+  border-bottom: solid 1px var(--textcolor);
+}
+
+.footer-twitter {
+  margin-bottom: 120px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: var(--f6);
+}
+
+/*-----------
+SP
+-----------*/
+
+@media screen and (min-width: 1000px) {
+
+  .container {
+    max-width: 1000px;
+  }
+
+  .pc-flex {
+    display: flex;
+  }
+
+  .columns-container {
+    justify-content: space-between;
+  }
+
+  .articles {
+    width: 65%;
+  }
+
+  .aside {
+    width: 30%;
+  }
+
+  /*-----------
+ヘッダー
+-----------*/
+.header-list {
+  overflow: auto;
+  padding: 10px calc(50vw - 500px);
+}
+
+/*-----------
+pickup
+-----------*/
+.pickup-container {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pickup-card {
+  width: 32%;
+}
+
+.pickup-title {
+  font-size: var(--f6);
+}
+
+
+
+/*-----------
+article
+-----------*/
+.article-title {
+  font-size: var(--f4);
+  margin-bottom: 10px;
+}
+
+.article-text {
+  padding:0 40px
+}
+
+.article-image {
+  padding: 5px 0 10px;
+}
+
+/*-----------
+
+-----------*/
+/*-----------
+ヘッダー
+-----------*/
+/*-----------
+ヘッダー
+-----------*/
+}
+
+
+
+
+
+
+
+
+
